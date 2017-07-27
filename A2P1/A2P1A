@@ -1,0 +1,70 @@
+################################################################
+#	Jordan Williamson       			      ##
+#	CS 2318, Section 252				      ##
+#	Assignment 2 - Part 1 Program A			      ##
+################################################################
+			.data
+			
+string:			.space 51			
+
+intPrompt:		.asciiz "Enter an integer: "
+stringPrompt:		.asciiz "\nEnter a string (beginning with a letter): "
+charPrompt:		.asciiz "\nEnter a character: "	
+
+intLabel:		.asciiz "Integer entered: "
+stringLabel:		.asciiz "String entered: "
+charLabel:		.asciiz "\nCharacter entered: "
+############################ code segment ################################
+			.text
+			.globl main
+main:		
+			li $v0, 4	# print string service
+			la $a0, intPrompt
+			syscall		
+				
+			li $v0, 5	
+			syscall		#Read-in integer.		
+			move $t0, $v0	#Store int.	
+			li $v0, 4
+			la $a0, intLabel
+			syscall		#Print Labelling	
+			move $a0, $t0
+			li $v0, 1
+			syscall		#Print the integer
+			
+			li $v0, 4
+			la $a0, stringPrompt
+			syscall		#Read in string.
+			la $a0, string 
+			li $a1, 51
+			li $v0, 8
+			move $t0, $a0
+			syscall 	#store string
+			
+			li $v0, 4
+			la $a0, stringLabel
+			syscall		#Print String Label	
+			move $a0, $t0
+			li $v0, 4
+			syscall		#Print string.
+			
+			li $v0, 4
+			la $a0, charPrompt
+			syscall		#Prompt for char
+			
+			li $v0, 12
+			syscall		#read-in character
+			move $t1, $v0
+			
+			li $v0, 4
+			la $a0, charLabel
+			syscall		#print Char label
+			
+			move $a0, $t1
+			li $v0, 11
+			syscall		#print char
+										
+																			
+			li $v0, 10	# graceful exit service
+			syscall
+################################################################

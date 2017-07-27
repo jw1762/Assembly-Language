@@ -1,0 +1,116 @@
+
+Keyin integer #1: 1
+Value is odd... add 1 to evenize...
+Keyin another? (n or N = no, anything else = yes) n
+1 value(s) entered: 2
+Min is 2
+Max is 2
+No duplicate...
+
+-- program is finished running --
+
+
+Reset: reset completed.
+
+
+Keyin integer #1: 1
+Value is odd... add 1 to evenize...
+Keyin another? (n or N = no, anything else = yes) 2
+Keyin integer #2: 2
+Keyin another? (n or N = no, anything else = yes) n
+2 value(s) entered: 2  2
+Min is 2
+Max is 2
+At least a duplicate...
+
+-- program is finished running --
+
+
+Reset: reset completed.
+
+
+Keyin integer #1: 1
+Value is odd... add 1 to evenize...
+Keyin another? (n or N = no, anything else = yes) 3
+Keyin integer #2: 3
+Value is odd... add 1 to evenize...
+Keyin another? (n or N = no, anything else = yes) n
+2 value(s) entered: 2  4
+Min is 2
+Max is 4
+No duplicate...
+
+-- program is finished running --
+
+
+Reset: reset completed.
+
+
+Keyin integer #1: 2
+Keyin another? (n or N = no, anything else = yes) 4
+Keyin integer #2: 4
+Keyin another? (n or N = no, anything else = yes) 6
+Keyin integer #3: 6
+Keyin another? (n or N = no, anything else = yes) n
+3 value(s) entered: 2  4  6
+Min is 2
+Max is 6
+No duplicate...
+
+-- program is finished running --
+
+
+Reset: reset completed.
+
+
+Keyin integer #1: 1
+Value is odd... add 1 to evenize...
+Keyin another? (n or N = no, anything else = yes) 4
+Keyin integer #2: 4
+Keyin another? (n or N = no, anything else = yes) 3
+Keyin integer #3: 3
+Value is odd... add 1 to evenize...
+Keyin another? (n or N = no, anything else = yes) n
+3 value(s) entered: 2  4  4
+Min is 2
+Max is 4
+At least a duplicate...
+
+-- program is finished running --
+
+
+Reset: reset completed.
+
+
+Keyin integer #1: 8
+Keyin another? (n or N = no, anything else = yes) 6
+Keyin integer #2: 6
+Keyin another? (n or N = no, anything else = yes) 4
+Keyin integer #3: 4
+Keyin another? (n or N = no, anything else = yes) 2
+Keyin integer #4: 2
+Keyin another? (n or N = no, anything else = yes) 0
+Keyin integer #5: 0
+Keyin another? (n or N = no, anything else = yes) 1
+Keyin integer #6: 1
+Value is odd... add 1 to evenize...
+Keyin another? (n or N = no, anything else = yes) 3
+Keyin integer #7: 3
+Value is odd... add 1 to evenize...
+Keyin another? (n or N = no, anything else = yes) 5
+Keyin integer #8: 5
+Value is odd... add 1 to evenize...
+Keyin another? (n or N = no, anything else = yes) 7
+Keyin integer #9: 7
+Value is odd... add 1 to evenize...
+Keyin another? (n or N = no, anything else = yes) 9
+Keyin integer #10: 9
+Value is odd... add 1 to evenize...
+Max of 10 values entered...
+
+10 value(s) entered: 8  6  4  2  0  2  4  6  8  10
+Min is 0
+Max is 10
+At least a duplicate...
+
+-- program is finished running --

@@ -1,0 +1,114 @@
+################################################################
+#	Jordan Williamson       			      ##
+#	CS 2318, Section 252				      ##
+#	Assignment 2 - Part 1 Program C			      ##
+################################################################
+			.data
+NL:			.asciiz " "
+intArr:			.word 44, 99, 33, 11, 66	#4 bytes each.
+arrLabel:		.asciiz "Array contains: "
+			.text
+			
+			.globl main
+############################ code segment ################################
+main:			
+			la $s3, intArr       # put address of intArr into $s3
+			
+			li $v0, 4
+			la $a0, arrLabel	#print Label
+			syscall
+			
+			lw $a0, ($s3)
+			li $v0, 1
+   			syscall		#print array element 0.
+   			
+   			li $v0, 4
+			la $a0, NL	#print space
+			syscall
+   			   			
+   			lw $a0, 4($s3)
+			li $v0, 1
+   			syscall		#print array element 1.
+   			
+   			li $v0, 4
+			la $a0, NL	#print space
+			syscall
+   			
+   			lw $a0, 8($s3)
+			li $v0, 1
+   			syscall		#print array element 2.
+   			
+   			li $v0, 4
+			la $a0, NL	#print space
+			syscall
+   			
+   			lw $a0, 12($s3)
+			li $v0, 1
+   			syscall		#print array element 3.
+   			
+   			li $v0, 4
+			la $a0, NL	#print space
+			syscall
+   			
+   			lw $a0, 16($s3)
+			li $v0, 1
+   			syscall		#print array element 4.
+   			
+   			li $v0, 4
+			la $a0, NL	#print space
+			syscall
+   			
+   			lw $t0, 0($s3)	#1 to t0
+   			lw $t2, 16($s3)	#5 to t2
+   			sw $t2, 0($s3)	#5 to ele 0
+   			sw $t0, 16($s3)	#1 to ele 5
+   			syscall
+   			
+   			lw $t0, 4($s3)	#1 to t0
+   			lw $t2, 8($s3)	#5 to t2
+   			sw $t2, 4($s3)	#5 to ele 0
+   			sw $t0, 8($s3)	#1 to ele 5
+
+			li $v0, 4
+			la $a0, arrLabel	#print Label
+			syscall
+			
+			lw $a0, 16($s3)
+			li $v0, 1
+   			syscall		#print array element 0.
+   			
+   			li $v0, 4
+			la $a0, NL	#print space
+			syscall
+			
+			lw $a0, 12($s3)
+			li $v0, 1
+   			syscall		#print array element 1.
+   			
+   			li $v0, 4
+			la $a0, NL	#print space
+			syscall
+			
+			lw $a0, 8($s3)
+			li $v0, 1
+   			syscall		#print array element 0.
+   			
+   			li $v0, 4
+			la $a0, NL	#print space
+			syscall
+			
+			lw $a0, 4($s3)
+			li $v0, 1
+   			syscall		#print array element 0.
+   			
+   			li $v0, 4
+			la $a0, NL	#print space
+			syscall
+			
+			lw $a0, 0($s3)
+			li $v0, 1
+   			syscall		#print array element 0.
+   			
+   			li $v0, 4
+			la $a0, NL	#print space
+			syscall
